@@ -32,7 +32,7 @@ public class Principal {
 			System.out.print("Que operacion deseas realizar? (1-suma|2-resta|3-multiplicacion|4-resta) ");
 			s=sc.nextInt();
 			while(s<1||s>4) {
-				System.out.print("ERROR! Que operacion deseas realizar? (1-suma|2-resta|3-multiplicacion|4-resta) ");
+				System.out.print("ERROR! Que operacion deseas realizar? (1-suma|2-resta|3-multiplicacion|4-resta|5-potencia) ");
 				s=sc.nextInt();
 			}
 			
@@ -48,6 +48,9 @@ public class Principal {
 				break;
 			case 4:
 				System.out.print("El resultado es "+op.division());
+				break;
+			case 5:
+				System.out.print("El resultado es "+op.potenciacion());
 				break;
 			}
 	}while(con());
